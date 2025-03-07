@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loocalize - Minhas Locações</title>
+    <link rel="stylesheet" href="css/locacoe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar à esquerda -->
+        <nav class="navbar">
+            <div class="nav-item" onclick="trocarAbaCatalogo()">
+                <img src="images/Catalogo.png" alt="Catálogo" class="nav-icon">
+            </div>
+            <div class="nav-item active">
+                <img src="images/locacao.png" alt="Minhas Locações" class="nav-icon">
+            </div>
+            <div class="nav-item" onclick="trocarTelaLogin()">
+                <img src="images/sign-out-svgrepo-com.png" alt="Sair" class="nav-icon">
+            </div>
+        </nav>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <!-- Topo -->
+            <header class="top-bar">
+                <div class="logo">Loocalize</div>
+                <div class="push-msg">
+                    <span id="pushMsg">Mensagem de erro ou sucesso...</span>
+                    <button id="closePushMsg" aria-label="Fechar mensagem">✕</button>
+                </div>
+                <div class="date-time" id="dateTime">ago 11 15:00</div>
+            </header>
+
+            <!-- Conteúdo central -->
+            <section class="content">
+                <h1 class="content-title">Minhas Locações</h1>
+                <div class="table-container">
+                    <table id="tvLocacoes">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Data de Locação</th>
+                                <th>Devolvido</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados das locações serão inseridos aqui via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <button id="btnDetalhar" class="action-button">Detalhar</button>
+            </section>
+
+            <!-- Detalhes do veículo -->
+            <aside class="vehicle-details">
+                <div class="vehicle-image">
+                    <img id="vehicleImage" src="images/car-placeholder.png" alt="Veículo" class="vehicle-img">
+                </div>
+                <div class="vehicle-info">
+                    <div class="info-row">
+                        <span id="vehicleModel" class="vehicle-model">Logan</span>
+                        <span id="vehiclePlate" class="vehicle-plate">OXE1523</span>
+                    </div>
+                    <div class="info-row">
+                        <span>Valor da diária</span>
+                        <span id="vehicleDailyRate" class="vehicle-rate">R$100</span>
+                    </div>
+                    <div class="info-row">
+                        <span>Ano</span>
+                        <span id="vehicleYear" class="vehicle-year">2020</span>
+                    </div>
+                    <div class="info-row">
+                        <span>Marca</span>
+                        <span id="vehicleBrand" class="vehicle-brand">Renault</span>
+                    </div>
+                    <div class="info-row">
+                        <span>Km</span>
+                        <span id="vehicleKm" class="vehicle-km">23.000</span>
+                    </div>
+                </div>
+                <button id="btnDevolver" class="action-button">Devolver</button>
+            </aside>
+        </main>
+    </div>
+
+    <script src="js/locacoes.js"></script>
+</body>
+</html>
