@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loocalize - Cadastro de Veículos</title>
+    <link rel="stylesheet" href="css/colaborador-cadastro-veiculo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Mensagem de push -->
+        <div class="push-msg" id="pushMsg">
+            <span id="pushMsgText">Mensagem de erro ou sucesso...</span>
+            <button id="closePushMsg" aria-label="Fechar mensagem">✕</button>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <!-- Botão Voltar -->
+            <div class="voltar-container">
+                <button id="btnVoltar" class="btn-voltar">Voltar</button>
+            </div>
+
+            <!-- Formulário de Cadastro de Veículos -->
+            <section class="cadastro-veiculo">
+                <h1 class="cadastro-title">Cadastro de Veículos</h1>
+                <form id="formCadastroVeiculo">
+                    <div class="form-group">
+                        <label for="tfModelo">Modelo</label>
+                        <input type="text" id="tfModelo" placeholder="Modelo" class="input-box">
+                    </div>
+                    <div class="form-group">
+                        <label for="tfMarca">Marca</label>
+                        <input type="text" id="tfMarca" placeholder="Marca" class="input-box">
+                    </div>
+                    <div class="form-group">
+                        <label for="tfPlaca">Placa</label>
+                        <input type="text" id="tfPlaca" placeholder="Placa" class="input-box">
+                    </div>
+                    <div class="form-group">
+                        <label for="tfAno">Ano</label>
+                        <input type="text" id="tfAno" placeholder="Ano" class="input-box">
+                    </div>
+                    <div class="form-group">
+                        <label for="tfKm">Quilometragem</label>
+                        <input type="number" id="tfKm" placeholder="Quilometragem" class="input-box">
+                    </div>
+                    <div class="form-group">
+                        <label for="tfLocacoes">Qtd. de Locações</label>
+                        <input type="number" id="tfLocacoes" placeholder="Quantidade de locações" class="input-box">
+                    </div>
+                    <div class="form-group">
+                        <label for="tfDiaria">Valor da Diária</label>
+                        <input type="number" id="tfDiaria" placeholder="Valor da diária" class="input-box">
+                    </div>
+                    <div class="form-group">
+                        <label for="btnImg">Escolher Foto</label>
+                        <input type="file" id="btnImg" class="input-box">
+                        <span id="lbCaminhoImg">Nenhum arquivo selecionado</span>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="btnCadastrar" class="btn-cadastrar">Cadastrar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/colaborador-cadastro-veiculo.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loocalize - Cadastro Pessoal</title>
+    <link rel="stylesheet" href="css/cadastro-pessoal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Topo -->
+        <header class="header">
+            <div class="push-msg" id="pushMsg">
+                <span id="lbPushMsgCadastroPessoal">Mensagem de erro ou sucesso...</span>
+                <button id="btnFecharCadastroPessoal" class="btn-fechar" onclick="fecharPushMsg()">×</button>
+            </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <!-- Formulário de Cadastro Pessoal -->
+            <div class="form-container">
+                <div class="form-header">
+                    <h1>Cadastro Pessoal</h1>
+                    <button id="btnVoltarCadastroConta" class="btn-voltar" onclick="trocarTelaCadastroConta()">Voltar</button>
+                </div>
+                <div class="form-content">
+                    <!-- Coluna 1 -->
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="tfNomeCadastroPessoal">Nome</label>
+                            <input type="text" id="tfNomeCadastroPessoal" placeholder="Nome" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="dpDataDeNascimentoCadastroPessoal">Data de Nascimento</label>
+                            <input type="date" id="dpDataDeNascimentoCadastroPessoal" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="tfTelefoneCadastroPessoal">Telefone</label>
+                            <input type="text" id="tfTelefoneCadastroPessoal" placeholder="(99) 98762-6499" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="tfEnderecoCadastroPessoal">Endereço</label>
+                            <input type="text" id="tfEnderecoCadastroPessoal" placeholder="Endereço" class="input-box">
+                        </div>
+                    </div>
+
+                    <!-- Coluna 2 -->
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="tfCpfCadastroPessoal">CPF</label>
+                            <input type="text" id="tfCpfCadastroPessoal" placeholder="CPF" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="tfCnhCadastroPessoal">CNH</label>
+                            <input type="text" id="tfCnhCadastroPessoal" placeholder="CNH" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="dpDataDeHabilitacaoCadastroPessoal">Data de Habilitação</label>
+                            <input type="date" id="dpDataDeHabilitacaoCadastroPessoal" class="input-box">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button id="btnCadastrarCadastroPessoal" class="btn-primary" onclick="trocarTelaLogin()">Cadastrar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/cadastro-pessoal.js"></script>
+</body>
+</html>

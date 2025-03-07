@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loocalize - Promoções</title>
+    <link rel="stylesheet" href="css/colaborador-aba-promocoes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar à esquerda -->
+        <nav class="navbar">
+            <div class="nav-item" onclick="trocarAbaVeiculos()">
+                <img src="images/car-svgrepo-com.png" alt="Veículos" class="nav-icon">
+            </div>
+            <div class="nav-item active">
+                <img src="images/offer-svgrepo-com.png" alt="Promoções" class="nav-icon">
+            </div>
+            <div class="nav-item" onclick="trocarTelaLogin()">
+                <img src="images/sign-out-svgrepo-com.png" alt="Sair" class="nav-icon">
+            </div>
+        </nav>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <!-- Topo -->
+            <header class="top-bar">
+                <div class="logo">Loocalize</div>
+                <div class="push-msg">
+                    <span id="pushMsg">Mensagem de erro ou sucesso...</span>
+                    <button id="closePushMsg" aria-label="Fechar mensagem">✕</button>
+                </div>
+                <div class="date-time" id="dateTime">ago 11 15:00</div>
+            </header>
+
+            <!-- Conteúdo central -->
+            <section class="content">
+                <h1 class="content-title">Promoções</h1>
+                <div class="table-container">
+                    <table id="tvPromocoes">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Título</th>
+                                <th>% Desc.</th>
+                                <th>Criação</th>
+                                <th>Expiração</th>
+                                <th>Ativa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados das promoções serão inseridos aqui via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="action-buttons">
+                    <button id="btnAdicionar" class="action-button">Adicionar</button>
+                    <button id="btnDetalhar" class="action-button">Detalhar</button>
+                </div>
+            </section>
+
+            <!-- Detalhes da promoção -->
+            <aside class="promocao-details">
+                <h2>Dados detalhados</h2>
+                <div class="info-row">
+                    <span>ID</span>
+                    <span id="promocaoId">7k23js6rd3</span>
+                </div>
+                <div class="info-row">
+                    <span>Título</span>
+                    <span id="promocaoTitulo">diadospais10off</span>
+                </div>
+                <div class="info-row">
+                    <span>% de desconto</span>
+                    <span id="promocaoDesconto">10</span>
+                </div>
+                <div class="info-row">
+                    <span>Qtd. mín diárias</span>
+                    <span id="promocaoQtdMinDiarias">5</span>
+                </div>
+                <div class="info-row">
+                    <span>Qtd. mín locações</span>
+                    <span id="promocaoQtdMinLocacoes">0</span>
+                </div>
+                <div class="info-row">
+                    <span>Data de criação</span>
+                    <span id="promocaoDataCriacao">26/08/2023</span>
+                </div>
+                <div class="info-row">
+                    <span>Data de expiração</span>
+                    <span id="promocaoDataExpiracao">30/08/2023</span>
+                </div>
+                <div class="info-row">
+                    <span>Ativa</span>
+                    <span id="promocaoAtiva">True</span>
+                </div>
+                <div class="action-buttons">
+                    <button id="btnEditar" class="action-button">Editar</button>
+                    <button id="btnDeletar" class="action-button delete">Deletar</button>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="js/colaboradore-aba-promocao.js"></script>
+</body>
+</html>

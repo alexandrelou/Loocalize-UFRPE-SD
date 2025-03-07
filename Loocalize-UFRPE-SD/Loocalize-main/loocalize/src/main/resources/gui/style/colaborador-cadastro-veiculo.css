@@ -1,0 +1,136 @@
+/* styles.css */
+:root {
+    --primary-color: #008dd8;
+    --secondary-color: #1e1e1e;
+    --background-color: #f5f5f5;
+    --white: #ffffff;
+    --error-color: #ff4444;
+    --hover-color: #0077b6;
+    --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Mensagem de push */
+.push-msg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--error-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.push-msg button {
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Conteúdo principal */
+.main-content {
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Botão Voltar */
+.voltar-container {
+    margin-bottom: 30px;
+}
+
+.btn-voltar {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Formulário de Cadastro de Veículos */
+.cadastro-veiculo {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.cadastro-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-box:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.btn-cadastrar {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cadastrar:hover {
+    background-color: var(--hover-color);
+}
+
+#lbCaminhoImg {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}

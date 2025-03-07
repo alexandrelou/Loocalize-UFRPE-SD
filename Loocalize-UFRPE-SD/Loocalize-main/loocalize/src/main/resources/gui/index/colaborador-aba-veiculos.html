@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loocalize - Veículos</title>
+    <link rel="stylesheet" href="css/colaboradore-aba-veiculos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar à esquerda -->
+        <nav class="navbar">
+            <div class="nav-item active">
+                <img src="images/car-svgrepo-com.png" alt="Veículos" class="nav-icon">
+            </div>
+            <div class="nav-item" onclick="trocarAbaPromocoes()">
+                <img src="images/offer-svgrepo-com.png" alt="Promoções" class="nav-icon">
+            </div>
+            <div class="nav-item" onclick="trocarTelaLogin()">
+                <img src="images/sign-out-svgrepo-com.png" alt="Sair" class="nav-icon">
+            </div>
+        </nav>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <!-- Topo -->
+            <header class="top-bar">
+                <div class="logo">Loocalize</div>
+                <div class="push-msg">
+                    <span id="pushMsg">Mensagem de erro ou sucesso...</span>
+                    <button id="closePushMsg" aria-label="Fechar mensagem">✕</button>
+                </div>
+                <div class="date-time" id="dateTime">ago 11 15:00</div>
+            </header>
+
+            <!-- Conteúdo central -->
+            <section class="content">
+                <h1 class="content-title">Veículos</h1>
+                <div class="table-container">
+                    <table id="tvVeiculos">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Marca</th>
+                                <th>Placa</th>
+                                <th>Ano</th>
+                                <th>Valor Diária</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados dos veículos serão inseridos aqui via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="action-buttons">
+                    <button id="btnAdicionar" class="action-button">Adicionar</button>
+                    <button id="btnDetalhar" class="action-button">Detalhar</button>
+                </div>
+            </section>
+
+            <!-- Detalhes do veículo -->
+            <aside class="veiculo-details">
+                <div class="veiculo-image">
+                    <img id="veiculoImage" src="images/car-placeholder.png" alt="Veículo" class="veiculo-img">
+                </div>
+                <div class="veiculo-info">
+                    <div class="info-row">
+                        <span>Modelo</span>
+                        <span id="veiculoModelo">Logan</span>
+                    </div>
+                    <div class="info-row">
+                        <span>Placa</span>
+                        <span id="veiculoPlaca">OXE1523</span>
+                    </div>
+                    <div class="info-row">
+                        <span>ID</span>
+                        <span id="veiculoId">7k23js6rd3</span>
+                    </div>
+                    <div class="info-row">
+                        <span>Marca</span>
+                        <span id="veiculoMarca">Renault</span>
+                    </div>
+                    <div class="info-row">
+                        <span>Ano</span>
+                        <span id="veiculoAno">2020</span>
+                    </div>
+                    <div class="info-row">
+                        <span>Km</span>
+                        <span id="veiculoKm">23.000</span>
+                    </div>
+                    <div class="info-row">
+                        <span>Qtd. Locações</span>
+                        <span id="veiculoLocacoes">10</span>
+                    </div>
+                    <div class="info-row">
+                        <span>Valor da Diária</span>
+                        <span id="veiculoDiaria">R$100</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button id="btnEditar" class="action-button">Editar</button>
+                    <button id="btnDeletar" class="action-button delete">Deletar</button>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="js/colaboradores-aba-veiculos.js"></script>
+</body>
+</html>

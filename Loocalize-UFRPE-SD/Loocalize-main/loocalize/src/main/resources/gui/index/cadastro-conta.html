@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loocalize - Cadastro de Conta</title>
+    <link rel="stylesheet" href="css/cadastro-conta.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Topo -->
+        <header class="header">
+            <div class="push-msg" id="pushMsg">
+                <span id="lbPushMsgCadastroConta">Mensagem de erro ou sucesso...</span>
+                <button id="btnFecharCadastroConta" class="btn-fechar" onclick="fecharPushMsg()">×</button>
+            </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <!-- Formulário de Cadastro -->
+            <div class="form-container">
+                <div class="form-header">
+                    <h1>Cadastro de Conta</h1>
+                    <button id="btnVoltarCadastroConta" class="btn-voltar" onclick="trocarTelaLogin()">Voltar</button>
+                </div>
+                <div class="form-content">
+                    <!-- Coluna 1 -->
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="tfUsuarioCadastroConta">Usuário</label>
+                            <input type="text" id="tfUsuarioCadastroConta" placeholder="Usuário" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="tfEmailCadastroConta">Email</label>
+                            <input type="email" id="tfEmailCadastroConta" placeholder="Email" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="pfSenhaCadastroConta">Senha</label>
+                            <input type="password" id="pfSenhaCadastroConta" placeholder="Senha" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="pfRepetirSenhaCadastroConta">Repetir Senha</label>
+                            <input type="password" id="pfRepetirSenhaCadastroConta" placeholder="Repetir Senha" class="input-box">
+                        </div>
+                    </div>
+
+                    <!-- Coluna 2 -->
+                    <div class="form-column">
+                        <img src="images/carro2.gif" alt="Carro" class="form-image">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button id="btnProximoCadastroConta" class="btn-primary" onclick="trocarTelaCadastroPessoal()">Próximo</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/cadastro-conta.js"></script>
+</body>
+</html>

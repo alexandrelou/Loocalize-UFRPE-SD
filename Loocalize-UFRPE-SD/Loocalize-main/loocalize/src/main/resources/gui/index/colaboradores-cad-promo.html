@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loocalize - Cadastro de Promoções</title>
+    <link rel="stylesheet" href="css/colaboradores-cas-promo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Mensagem de push -->
+        <div class="push-msg" id="pushMsg">
+            <span id="pushMsgText">Mensagem de erro ou sucesso...</span>
+            <button id="closePushMsg" aria-label="Fechar mensagem">✕</button>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <!-- Botão Voltar -->
+            <div class="voltar-container">
+                <button id="btnVoltar" class="btn-voltar">Voltar</button>
+            </div>
+
+            <!-- Formulário de Cadastro de Promoções -->
+            <section class="cadastro-promocao">
+                <h1 class="cadastro-title">Cadastro de Promoções</h1>
+                <form id="formCadastroPromocao">
+                    <div class="form-group">
+                        <label for="tfTitulo">Título</label>
+                        <input type="text" id="tfTitulo" placeholder="Título da promoção" class="input-box">
+                    </div>
+                    <div class="form-group">
+                        <label for="tfDesconto">% de Desconto</label>
+                        <input type="number" id="tfDesconto" placeholder="Desconto" class="input-box">
+                    </div>
+                    <div class="form-group">
+                        <label for="tfQtdMinDiarias">Qtd. Mínima de Diárias</label>
+                        <input type="number" id="tfQtdMinDiarias" placeholder="Quantidade mínima de diárias" class="input-box">
+                    </div>
+                    <div class="form-group">
+                        <label for="tfQtdMinLocacoes">Qtd. Mínima de Locações</label>
+                        <input type="number" id="tfQtdMinLocacoes" placeholder="Quantidade mínima de locações" class="input-box">
+                    </div>
+                    <div class="form-group">
+                        <label for="dpDataCriacao">Data de Criação</label>
+                        <input type="date" id="dpDataCriacao" class="input-box">
+                    </div>
+                    <div class="form-group">
+                        <label for="dpDataExpiracao">Data de Expiração</label>
+                        <input type="date" id="dpDataExpiracao" class="input-box">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="btnCadastrar" class="btn-cadastrar">Cadastrar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/colaboradore-cad-promo.js"></script>
+</body>
+</html>
+

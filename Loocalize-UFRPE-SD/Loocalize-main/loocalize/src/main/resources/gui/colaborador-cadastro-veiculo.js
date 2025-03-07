@@ -1,0 +1,55 @@
+// script.js
+document.addEventListener('DOMContentLoaded', function () {
+    const pushMsg = document.getElementById('pushMsg');
+    const closePushMsg = document.getElementById('closePushMsg');
+    const btnVoltar = document.getElementById('btnVoltar');
+    const formCadastroVeiculo = document.getElementById('formCadastroVeiculo');
+    const btnCadastrar = document.getElementById('btnCadastrar');
+    const btnImg = document.getElementById('btnImg');
+    const lbCaminhoImg = document.getElementById('lbCaminhoImg');
+
+    // Fechar mensagem de push
+    closePushMsg.addEventListener('click', function () {
+        pushMsg.style.display = 'none';
+    });
+
+    // Botão Voltar
+    btnVoltar.addEventListener('click', function () {
+        alert('Voltando para a aba de Veículos...');
+    });
+
+    // Escolher imagem
+    btnImg.addEventListener('change', function () {
+        const file = btnImg.files[0];
+        if (file) {
+            lbCaminhoImg.textContent = file.name;
+        } else {
+            lbCaminhoImg.textContent = 'Nenhum arquivo selecionado';
+        }
+    });
+
+    // Submissão do formulário
+    formCadastroVeiculo.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const modelo = document.getElementById('tfModelo').value;
+        const marca = document.getElementById('tfMarca').value;
+        const placa = document.getElementById('tfPlaca').value;
+        const ano = document.getElementById('tfAno').value;
+        const km = document.getElementById('tfKm').value;
+        const locacoes = document.getElementById('tfLocacoes').value;
+        const diaria = document.getElementById('tfDiaria').value;
+        const imagem = btnImg.files[0];
+
+        // Validação simples
+        if (!modelo || !marca || !placa || !ano || !km || !locacoes || !diaria || !imagem) {
+            alert('Preencha todos os campos e selecione uma imagem!');
+            return;
+        }
+
+        // Simulação de cadastro
+        alert('Veículo cadastrado com sucesso!');
+        formCadastroVeiculo.reset();
+        lbCaminhoImg.textContent = 'Nenhum arquivo selecionado';
+    });
+});
