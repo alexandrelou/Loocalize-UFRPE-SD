@@ -1,0 +1,118 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Mensagem de erro/sucesso */
+.push-msg-error {
+    background-color: #ff4444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.push-msg-error .btn-fechar {
+    cursor: pointer;
+}
+
+.push-msg-error .btn-fechar img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Título */
+.title {
+    color: #008dd8;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Campos de entrada */
+.input-group {
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Botão de entrar */
+.btn-entrar {
+    width: 200px;
+    height: 40px;
+    background-color: #008dd8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-entrar:hover {
+    background-color: #007bbd;
+}
+
+/* Link para cadastro */
+.cadastro-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cadastro-link span {
+    color: #757575;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cadastro-link a {
+    color: #008dd8;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cadastro-link a:hover {
+    text-decoration: underline;
+}

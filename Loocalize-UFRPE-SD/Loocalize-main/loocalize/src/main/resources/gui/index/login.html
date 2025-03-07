@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loocalize - Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Topo: Mensagem de erro/sucesso -->
+        <div id="push-msg" class="push-msg-error shadow">
+            <span id="push-msg-text">Mensagem de erro ou sucesso...</span>
+            <div id="btn-fechar" class="btn-fechar">
+                <img src="images/cil-x.png" alt="Fechar">
+            </div>
+        </div>
+
+        <!-- Conteúdo central: Formulário de login -->
+        <div class="login-box">
+            <h1 class="title">Loocalize</h1>
+
+            <!-- Campo de usuário -->
+            <div class="input-group">
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" placeholder="usuário">
+            </div>
+
+            <!-- Campo de senha -->
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="senha">
+            </div>
+
+            <!-- Botão de entrar -->
+            <button id="btn-entrar" class="btn-entrar">Entrar</button>
+
+            <!-- Link para cadastro -->
+            <div class="cadastro-link">
+                <span>Não possui uma conta?</span>
+                <a id="link-cadastro" href="#">Cadastre-se</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
