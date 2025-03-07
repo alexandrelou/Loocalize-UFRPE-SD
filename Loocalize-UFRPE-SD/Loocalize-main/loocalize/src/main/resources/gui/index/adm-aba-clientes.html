@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loocalize - Gerenciamento de Clientes</title>
+    <link rel="stylesheet" href="css/adm-aba-clientes.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Topo -->
+        <header class="header">
+            <div class="logo">
+                <span>Loocalize</span>
+            </div>
+            <div class="push-msg" id="pushMsg">
+                <span id="lbPushMsgAbaClientes">Mensagem de erro ou sucesso...</span>
+                <button id="btnFecharAbaClientes" class="btn-fechar" onclick="fecharPushMsg()">×</button>
+            </div>
+            <div class="data-hora">
+                <span id="lbDataHoraAbaClientes">ago 11 15:00</span>
+            </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <!-- Barra Lateral -->
+            <aside class="sidebar">
+                <div class="nav-item" onclick="trocarAbaColaboradores()">
+                    <img src="images/contacts-dairy-svgrepo-com.png" alt="Clientes">
+                    <span>Clientes</span>
+                </div>
+                <div class="nav-item active">
+                    <img src="images/user-svgrepo-com.png" alt="Usuário">
+                    <span>Usuário</span>
+                </div>
+                <div class="nav-item" onclick="trocarTelaLogin()">
+                    <img src="images/sign-out-svgrepo-com.png" alt="Sair">
+                    <span>Sair</span>
+                </div>
+            </aside>
+
+            <!-- Área de Trabalho -->
+            <section class="workspace">
+                <!-- Tabela de Clientes -->
+                <div class="clientes-container">
+                    <h1>Clientes</h1>
+                    <table id="tvClientesAbaClientes">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Usuário</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados dos clientes serão inseridos aqui via JavaScript -->
+                        </tbody>
+                    </table>
+                    <div class="actions">
+                        <button class="btn-primary" onclick="adicionarCliente()">Adicionar Cliente</button>
+                        <button class="btn-secondary" onclick="detalharCliente()">Detalhar Cliente</button>
+                    </div>
+                </div>
+
+                <!-- Painel de Detalhes -->
+                <div class="detalhes-container">
+                    <h2>Dados Detalhados</h2>
+                    <div class="detalhes-content">
+                        <div class="detalhe-item">
+                            <label>ID:</label>
+                            <span id="lbIdAbaClientes">7k23js6rd3</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <label>Usuário:</label>
+                            <span id="lbUsuarioAbaClientes">joaojose</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <label>Email:</label>
+                            <span id="lbEmailAbaClientes">joao@gmail.com</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <label>Telefone:</label>
+                            <span id="lbTelefoneAbaClientes">81998761234</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <label>Endereço:</label>
+                            <span id="lbEnderecoAbaClientes">Rua General De Campos, 210</span>
+                        </div>
+                    </div>
+                    <button class="btn-danger" onclick="deletarCliente()">Deletar Cliente</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/adm-aba-clientes.js"></script>
+</body>
+</html>

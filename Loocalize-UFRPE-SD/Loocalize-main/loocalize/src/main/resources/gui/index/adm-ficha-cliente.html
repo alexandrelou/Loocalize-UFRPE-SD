@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loocalize - Edição de Cliente</title>
+    <link rel="stylesheet" href="css/adm-ficha-cliente.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Topo -->
+        <header class="header">
+            <div class="push-msg" id="pushMsg">
+                <span id="lbPushEditarCliente">Mensagem de erro ou sucesso...</span>
+                <button id="btnFecharEditarCliente" class="btn-fechar" onclick="fecharPushMsg()">×</button>
+            </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <!-- Formulário de Edição -->
+            <div class="form-container">
+                <div class="form-header">
+                    <h1>Edição de Cliente</h1>
+                    <button id="btnVoltarEditarCliente" class="btn-voltar" onclick="trocarColaboradorAbaPromocoes()">Voltar</button>
+                </div>
+                <div class="form-content">
+                    <!-- Coluna 1 -->
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="tfUsuarioEditarCliente">Usuário</label>
+                            <input type="text" id="tfUsuarioEditarCliente" placeholder="Usuário" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="tfEmailEditarCliente">Email</label>
+                            <input type="email" id="tfEmailEditarCliente" placeholder="Email" class="input-box">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button id="btnSalvarEditarCliente" class="btn-primary" onclick="salvarEdicaoPromocao()">Salvar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/adm-ficha-cliente.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loocalize - Cadastro de Cliente</title>
+    <link rel="stylesheet" href="css/cadastro-cliente.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Topo -->
+        <header class="header">
+            <div class="push-msg" id="pushMsg">
+                <span id="lbPushMsgCadastroCliente">Mensagem de erro ou sucesso...</span>
+                <button id="btnFecharCadastroCliente" class="btn-fechar" onclick="fecharPushMsg()">×</button>
+            </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <!-- Formulário de Cadastro -->
+            <div class="form-container">
+                <div class="form-header">
+                    <h1>Cadastro de Cliente</h1>
+                    <button id="btnVoltarCadastroCliente" class="btn-voltar" onclick="trocarAdmAbaClientes()">Voltar</button>
+                </div>
+                <div class="form-content">
+                    <!-- Coluna 1 -->
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="tfUsuarioCadastroCliente">Usuário</label>
+                            <input type="text" id="tfUsuarioCadastroCliente" placeholder="Usuário" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="tfEmailCadastroCliente">Email</label>
+                            <input type="email" id="tfEmailCadastroCliente" placeholder="Email" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="pfSenhaCadastroCliente">Senha</label>
+                            <input type="password" id="pfSenhaCadastroCliente" placeholder="Senha" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="pfRepetirSenhaCadastroCliente">Repetir Senha</label>
+                            <input type="password" id="pfRepetirSenhaCadastroCliente" placeholder="Repetir Senha" class="input-box">
+                        </div>
+                    </div>
+
+                    <!-- Coluna 2 -->
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="tfNomeCadastroCliente">Nome Completo</label>
+                            <input type="text" id="tfNomeCadastroCliente" placeholder="Nome Completo" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="dpDataDeNascimentoCadastroCliente">Data de Nascimento</label>
+                            <input type="date" id="dpDataDeNascimentoCadastroCliente" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="tfEnderecoCadastroCliente">Endereço</label>
+                            <input type="text" id="tfEnderecoCadastroCliente" placeholder="Endereço" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="tfTelefoneCadastroCliente">Telefone</label>
+                            <input type="text" id="tfTelefoneCadastroCliente" placeholder="(00) 0 0000-0000" class="input-box">
+                        </div>
+                    </div>
+
+                    <!-- Coluna 3 -->
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="tfCpfCadastroCliente">CPF</label>
+                            <input type="text" id="tfCpfCadastroCliente" placeholder="000.000.000-00" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="tfCnhCadastroCliente">CNH</label>
+                            <input type="text" id="tfCnhCadastroCliente" placeholder="000000000000" class="input-box">
+                        </div>
+                        <div class="form-group">
+                            <label for="dpDataDeHabilitacaoCadastroCliente">Data de Habilitação</label>
+                            <input type="date" id="dpDataDeHabilitacaoCadastroCliente" class="input-box">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button id="btnSalvarCadastroCliente" class="btn-primary" onclick="cadastrarCliente()">Cadastrar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/cadastro-cliente.js"></script>
+</body>
+</html>
